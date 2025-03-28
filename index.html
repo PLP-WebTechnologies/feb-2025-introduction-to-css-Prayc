@@ -1,31 +1,97 @@
- body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-        form {
-            width: 50%;
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        label {
-            font-weight: bold;
-        }
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage</title>
+  </head>
+  <body>
+    <p>My favourite hobbies are:</p>
+    <ol type="i">
+      <li>Swimming</li>
+      <li>Dancing</li>
+      <li>Hanging out with friends and family</li>
+      <li>Travelling</li>
+      <li>Coding</li>
+    </ol>
+    <h2>An externa image</h2>
+    <img src="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=600" alt="my dream livingroom">
+    <!--contacts table-->
+    <h2>Contact details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Earle Ng'ani</td>
+        <td>717-00200</td>
+        <td>0721238814</td>
+        <td>Earle@gmail.com</td>
+      </tr>
+       <tr>
+        <td>judy Ng'ani</td>
+        <td>234-00200</td>
+        <td>0721228214</td>
+        <td>judy@gmail.com</td>
+      </tr>
+       <tr>
+        <td>Asby Ng'ani</td>
+        <td>345-00200</td>
+        <td>0729038814</td>
+        <td>asby@gmail.com</td>
+      </tr>
+       <tr>
+        <td>Stacy Ng'ani</td>
+        <td>989-00200</td>
+        <td>0729808814</td>
+        <td>stacy@gmail.com</td>
+      </tr>
+       <tr>
+        <td>Pracy Ng'ani</td>
+        <td>877-00100</td>
+        <td>0798938814</td>
+        <td>pracy@gmail.com</td>
+      </tr>
+    </table>
+    <!--Registeration form-->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label>Preferred Contact Method:</label><br>
+        <input type="radio" id="email_contact" name="contact_method" value="email" required>
+        <label for="email_contact">Email</label>
+        <input type="radio" id="phone_contact" name="contact_method" value="phone">
+        <label for="phone_contact">Phone</label><br>
+        
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel">
+        <label for="travel">Travel</label><br>
+        
+        <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
